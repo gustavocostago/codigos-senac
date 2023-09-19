@@ -9,7 +9,10 @@ SELECT * FROM corrida;
 select * from cliente_pessoa_fisica;
 
 SELECT * from cliente;
-select co.data_corrida, cl.nome as Cliente, tx.modelo as Carro
+
+
+-- create view Corridas_Realizadas AS
+select co.data_corrida, cl.nome as Cliente, tx.marca as Carro
   from corrida co
   inner join
   cliente cl
@@ -17,3 +20,5 @@ select co.data_corrida, cl.nome as Cliente, tx.modelo as Carro
   inner JOIN
   taxi tx
   on co.placa = tx.placa
+  -- WHERE tx.marca = 'Honda'
+

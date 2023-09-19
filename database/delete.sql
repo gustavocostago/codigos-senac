@@ -5,4 +5,6 @@ delete from taxi where placa = "TESTE";
 
 TRUNCATE TABLE cliente CASCADE; 
 
-DELETE FROM cliente CASCADE;
+DELETE id FROM cliente CASCADE;
+
+DROP table cliente;

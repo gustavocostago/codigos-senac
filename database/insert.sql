@@ -42,5 +42,5 @@ INSERT INTO TAXI (PLACA, MARCA, MODELO, ANO) VALUES
     ('FGH890', 'Acura', 'TLX', '2018');
 
 INSERT INTO corrida (data_corrida, id_cliente, placa) VALUES
-    (CURRENT_DATE, 1, 'ABC123'),
-    (CURRENT_DATE, 2, 'DEF456');
+    (CURRENT_DATE, 55, 'FGH890'),
+    (CURRENT_DATE, 55, 'CDE567');
