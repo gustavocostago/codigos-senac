@@ -1,14 +1,12 @@
-const express = require("express");
+import express from "express";
+import bodyParser from "body-parser";
+import router from "./routes.js";
 const app = express();
-const port = 3000;
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-app.get("/users", (req, res) => {
-  res.send("esse é um usuário");
-});
+const port = 8080;
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`servidor rodando na porta ${port}`);
 });
+
+app.use(bodyParser.json());
+app.use("/", router);
